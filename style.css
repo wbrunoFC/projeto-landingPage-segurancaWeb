@@ -12,6 +12,8 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  /* tira o scroll da pagina */
+  overflow: hidden;
 
   main {
     margin: 0 auto;
@@ -79,6 +81,11 @@ body {
     color: var(--font-color-white);
     font-family: var(--font-principal);
 
+    /* colar o footer na parte inferior da pagina */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
     hr {
       width: 568px;
       height: 1px;
@@ -89,10 +96,8 @@ body {
 
     img {
       position: fixed;
-      bottom: 79px;
+      bottom: 0px;
       left: 0;
-      width: 51px;
-      height: 62px;
       margin: 0 0 20px 20px;
     }
   }
